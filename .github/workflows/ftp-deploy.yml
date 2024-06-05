@@ -10,7 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: Actions
-
+    steps:
+      - run: |
+          echo ${{ secrets.FTP_SERVER }} 
   deploy:
     runs-on: ${{ matrix.os }}
 

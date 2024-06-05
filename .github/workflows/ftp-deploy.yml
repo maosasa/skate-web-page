@@ -6,6 +6,11 @@ on:
       - deploy
 
 jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    environment: 
+      name: Actions
+
   deploy:
     runs-on: ${{ matrix.os }}
 

@@ -25,4 +25,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
           local-dir: ./
-          server-dir: ./public_html/maosasa-skate.com
+          server-dir: ./public_html/maosasa-skate.com/
+          
